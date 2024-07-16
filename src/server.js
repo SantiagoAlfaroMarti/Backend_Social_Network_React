@@ -1,11 +1,13 @@
 import express from 'express';
-import 'dotenv/config';
+import 'dotenv/config'
 import { dbConnection } from './database/db.js';
-import { router as gamesRoutes } from './router.js';
+import router from './router.js';
 
 const app = express();
+
 app.use(express.json())
-const PORT = process.env.PORT || 5001;
+
+const PORT = process.env.PORT
 
 app.get('/healthy', (req, res) => {
     res.json({
@@ -13,15 +15,16 @@ app.get('/healthy', (req, res) => {
         message: "Server is healthy!"
     });
 });
-app.use('/api', gamesRoutes)
+
+app.use('/api/v1', router)
 
 dbConnection()
     .then(() => {
-        console.log('Database connection established!');
+        console.log('Database Connected');
         app.listen(PORT, () => {
-            console.log(`Server running on ${PORT}`);
+            console.log(`Server running ${PORT}`);
         });
     })
     .catch(error => {
-        console.error('Error establishing connection with the database:', error);
-    });
+        console.log('Error conecction database: ' + error.message);
+    })
