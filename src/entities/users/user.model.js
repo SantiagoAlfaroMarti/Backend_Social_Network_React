@@ -22,7 +22,8 @@ export const UserSchema = new Schema(
         role: {
             type: String,
             enum: ['user', 'admin', 'super_admin'],
-            default: 'user'
+            default: 'user',
+            require:true
         },
         is_active: {
             type: Boolean,
@@ -34,7 +35,6 @@ export const UserSchema = new Schema(
         versionKey: false
     }
 );
-
 const User = model("User", UserSchema)
 
 export default User;

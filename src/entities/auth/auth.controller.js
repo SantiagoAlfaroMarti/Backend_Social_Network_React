@@ -1,11 +1,12 @@
-import bcrypt from "bcrypt"
-import User from "../users/users.model.js"
-import jwt from "jsonwebtoken"
+import bcrypt from "bcrypt";
+import User from "../users/users.model.js";
+import jwt from "jsonwebtoken";
 
 export const registerUser = async (req, res) => {
     try {
         const { email, password } = req.body
         if (!email || !password) {
+            
             return res.status(400).json({
                 success: false,
                 message: "Error not email or password found",
@@ -18,11 +19,11 @@ export const registerUser = async (req, res) => {
             })
         }
         const passwordHash = bcrypt.hashSync(password, parseInt(process.env.SALT_ROUNDS))
-
         const newUser = await User.create({
             email: email,
             password: passwordHash
         })
+
         return res.status(200).json({
             success: true,
             message: "User created successfully",
@@ -35,11 +36,9 @@ export const registerUser = async (req, res) => {
         })
     }
 }
-
 export const loginUser = async (req, res) => {
     try {
         const { email, password } = req.body
-
         if (!email || !password) {
             return res.status(400).json({
                 success: false,
@@ -55,14 +54,12 @@ export const loginUser = async (req, res) => {
                 message: "Email or password not valid"
             })
         }
-
         if (!bcrypt.compareSync(password, user.password)) {
             return res.status(400).json({
                 succes: false,
                 message: "Email or password not valid"
             })
         }
-
         const token = jwt.sign({
             id: user.id,
             role: user.role

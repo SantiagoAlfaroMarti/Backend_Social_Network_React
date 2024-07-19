@@ -3,17 +3,18 @@ import 'dotenv/config';
 import { dbConnection } from './database/db.js';
 import router from './router.js';
 
-const app = express()
+const app = express();
 app.use(express.json())
+
 const PORT = process.env.PORT
 
-app.get("/healthy", (req, res) => {
+app.get('/healthy', (req, res) => {
     return res.status(200).json({
         success: true,
-        message: "Server is healthy!"
+        message: "Server is healthy"
     });
 });
-app.use("/api", router)
+app.use('/api', router)
 
 dbConnection()
     .then(() => {

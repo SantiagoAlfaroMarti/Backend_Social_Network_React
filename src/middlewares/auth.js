@@ -15,14 +15,14 @@ export const auth = (req, res, next) => {
 
         req.tokenData = {
             id: decoded.id,
-            role_id: decoded.role_id
+            role: decoded.role
         }
         next();
     } catch (error) {
         res.status(500).json(
             {
                 success: false,
-                message: "Error authenticating user",
+                message: "Error authenticadd",
                 error: error
             }
         )
