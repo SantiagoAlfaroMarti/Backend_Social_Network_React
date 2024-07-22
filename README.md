@@ -2,7 +2,7 @@
 
 Welcome to my SocialNetwork Backend project.
 <br><br>
-<img src="./img/imagenRedSocial.gif>
+<img src="./img/Redes-sociales-compartir-gif.webp>
 </a>
 
 <details>
