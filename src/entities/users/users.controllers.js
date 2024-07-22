@@ -6,6 +6,7 @@ export const register = async (req, res) => {
     try {
         const { email, password } = req.body
         if (!email || !password) {
+
             return res.status(404).json(
                 {
                     success: false,
@@ -42,6 +43,7 @@ export const login = async (req, res) => {
         const { email, password } = req.body;
 
         if (!email || !password) {
+
             return res.status(404).json(
                 {
                     success: false,
@@ -55,6 +57,7 @@ export const login = async (req, res) => {
             }
         )
         if (!user) {
+            
             return res.status(400).json(
                 {
                     success: false,

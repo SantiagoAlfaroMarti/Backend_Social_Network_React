@@ -9,6 +9,7 @@ app.use(express.json())
 const PORT = process.env.PORT
 
 app.get('/healthy', (req, res) => {
+
     return res.status(200).json({
         success: true,
         message: "Server is healthy"

@@ -13,6 +13,7 @@ export const registerUser = async (req, res) => {
             })
         }
         if (password.length < 6 || password.length > 20) {
+
             return res.status(400).json({
                 success: false,
                 message: "Password must be between 6 and 20 characters",
@@ -29,6 +30,7 @@ export const registerUser = async (req, res) => {
             message: "User created successfully",
         })
     } catch (error) {
+
         return res.status(500).json({
             success: false,
             message: "Error registering user",
@@ -40,6 +42,7 @@ export const loginUser = async (req, res) => {
     try {
         const { email, password } = req.body
         if (!email || !password) {
+
             return res.status(400).json({
                 success: false,
                 message: "Email and Password are needed"
@@ -49,12 +52,14 @@ export const loginUser = async (req, res) => {
             email: email
         })
         if (!user) {
+
             return res.status(400).json({
                 success: false,
                 message: "Email or password not valid"
             })
         }
         if (!bcrypt.compareSync(password, user.password)) {
+
             return res.status(400).json({
                 succes: false,
                 message: "Email or password not valid"
@@ -64,7 +69,6 @@ export const loginUser = async (req, res) => {
             id: user.id,
             role: user.role
         }, process.env.SECRET, { expiresIn: '2h' });
-
 
         return res.status(200).json({
             success: true,

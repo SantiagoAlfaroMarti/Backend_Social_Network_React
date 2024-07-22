@@ -3,6 +3,7 @@ import jwt from 'jsonwebtoken';
 export const auth = (req, res, next) => {
     try {
         if (!req.headers.authorization) {
+            
             return res.status(400).json(
                 {
                     success: false,
