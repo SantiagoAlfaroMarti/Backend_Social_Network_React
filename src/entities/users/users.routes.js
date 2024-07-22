@@ -1,9 +1,12 @@
-import { Router } from 'express';
-import { login, register } from './users.controller.js';
+import { Router } from "express";
+import { getAllUsers, getUserProfile, updateUserProfile } from "./users.controllers.js";
+import { auth } from "../../middlewares/auth.js";
+import { isAdmin } from "../../middlewares/isAdmin.js";
 
 const router = Router()
 
-router.post('/register', register)
-router.post('/login', login) 
+router.get('/', auth, isAdmin, getAllUsers)
+router.get('/profile', auth, getUserProfile)
+router.put('/profile', auth, updateUserProfile)
 
 export { router }
