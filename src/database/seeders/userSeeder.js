@@ -9,65 +9,65 @@ export const userSeeder = async () => {
 
 		const users = [
 			{
-				_id: "65edc858352c4f2a5cf087ba",
+				_id: "65edc858352c4f2a5cf087c1",
   				email: "morena@morena.com",
 				password: bcrypt.hashSync("123456789", parseInt(process.env.SALT_ROUNDS)),
 				role: "admin",
 			},
 			{
-				_id: "71gdc860352c4f2a5cf087bc",
+				_id: "65edc858352c4f2a5cf087c2",
 				email: "maria@maria.com",
 				password: bcrypt.hashSync("123456789", parseInt(process.env.SALT_ROUNDS)),
 				role: "user",
 			},
 			{
-				_id: "72hedc861352c4f2a5cf087bd",
+				_id: "65edc858352c4f2a5cf087c3",
 				email: "pedro@pedro.com",
 				password: bcrypt.hashSync("123456789", parseInt(process.env.SALT_ROUNDS)),
 				role: "user",
 			},
 			{
-				_id: "73iedc862352c4f2a5cf087be",
+				_id: "65edc858352c4f2a5cf087c4",
 				email: "luis@luis.com",
 				password: bcrypt.hashSync("123456789", parseInt(process.env.SALT_ROUNDS)),
 				role: "user",
 			},
 			{
-				_id: "65edc858352c4f2a5cf087bb",
+				_id: "65edc858352c4f2a5cf087c5",
 				email: "ana@ana.com",
 				password: bcrypt.hashSync("123456789", parseInt(process.env.SALT_ROUNDS)),
 				role: "user",
 			},
 			{
-				_id: "74jedc863352c4f2a5cf087bf",
+				_id: "65edc858352c4f2a5cf087c6",
 				email: "carla@carla.com",
 				password: bcrypt.hashSync("123456789", parseInt(process.env.SALT_ROUNDS)),
 				role: "user",
 			},
 			{
-				_id: "75kedc864352c4f2a5cf087c0",
+				_id: "65edc858352c4f2a5cf087c7",
 				email: "jorge@jorge.com",
 				password: bcrypt.hashSync("123456789", parseInt(process.env.SALT_ROUNDS)),
 				role: "user",
 			},
 			{
-				_id: "76ledc865352c4f2a5cf087c1",
+				_id: "65edc858352c4f2a5cf087c8",
 				email: "carmen@carmen.com",
 				password: bcrypt.hashSync("123456789", parseInt(process.env.SALT_ROUNDS)),
 				role: "user",
 			},
 			{
-				_id: "78nedc867352c4f2a5cf087c3",
+				_id: "65edc858352c4f2a5cf087c9",
 				email: "javier@javier.com",
 				password: bcrypt.hashSync("123456789", parseInt(process.env.SALT_ROUNDS)),
 				role: "user",
-			  },
-			  {
-				_id: "79oedc868352c4f2a5cf087c4",
+			},
+			{
+				_id: "65edc858352c4f2a5cf087ca",
 				email: "laura@laura.com",
 				password: bcrypt.hashSync("123456789", parseInt(process.env.SALT_ROUNDS)),
 				role: "user",
-			  }
+			}
 		];
 
 		await User.insertMany(users);

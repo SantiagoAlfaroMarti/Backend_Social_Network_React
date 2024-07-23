@@ -9,43 +9,43 @@ export const postSeeder = async () => {
         const posts = [
             {
                 description: "Exploring new hobbies and interests.",
-                userId: "65edc858352c4f2a5cf087ba",
+                userId: "65edc858352c4f2a5cf087c1",
             },
             {
                 description: "Reading a fascinating book about history.",
-                userId: "71gdc860352c4f2a5cf087bc",
+                userId: "65edc858352c4f2a5cf087c2",
             },
             {
                 description: "Going for a hike in the mountains.",
-                userId: "72hedc861352c4f2a5cf087bd",
+                userId: "65edc858352c4f2a5cf087c3",
             },
             {
                 description: "Starting a new fitness routine.",
-                userId: "73iedc862352c4f2a5cf087be",
+                userId: "65edc858352c4f2a5cf087c4",
             },
             {
                 description: "Watching a documentary about space.",
-                userId: "65edc858352c4f2a5cf087bb",
+                userId: "65edc858352c4f2a5cf087c5",
             },
             {
                 description: "Trying out a new painting technique.",
-                userId: "74jedc863352c4f2a5cf087bf",
+                userId: "65edc858352c4f2a5cf087c6",
             },
             {
                 description: "Joining a local sports team.",
-                userId: "75kedc864352c4f2a5cf087c0",
+                userId: "65edc858352c4f2a5cf087c7",
             },
             {
                 description: "Learning to play a musical instrument.",
-                userId: "76ledc865352c4f2a5cf087c1",
+                userId: "65edc858352c4f2a5cf087c8",
             },
             {
                 description: "Volunteering at a community center.",
-                userId: "78nedc867352c4f2a5cf087c3",
+                userId: "65edc858352c4f2a5cf087c9",
             },
             {
                 description: "Starting a garden in my backyard.",
-                userId: "79oedc868352c4f2a5cf087c4",
+                userId: "65edc858352c4f2a5cf087ca",
             },
         ];
 
