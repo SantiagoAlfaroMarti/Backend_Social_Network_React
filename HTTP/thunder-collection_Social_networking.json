@@ -1,0 +1,265 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "Social_networking",
+    "collectionId": "a8ce0c23-e0c4-478d-b676-df6dbd4ee65f",
+    "dateExported": "2024-07-23T08:57:38.695Z",
+    "version": "1.2",
+    "folders": [
+        {
+            "_id": "4fccab2a-92ee-4a1e-8156-01ea7709f1f2",
+            "name": "Auth",
+            "containerId": "",
+            "created": "2024-07-15T07:26:52.018Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "3ec0cf21-3694-4368-a2b2-fcbdc3b062ac",
+            "name": "Users",
+            "containerId": "",
+            "created": "2024-07-15T07:27:00.589Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "7554ceb9-a3dd-4c2f-97ba-f768545261e9",
+            "name": "Posts",
+            "containerId": "",
+            "created": "2024-07-15T07:27:13.947Z",
+            "sortNum": 30000
+        },
+        {
+            "_id": "d2e70316-865b-4038-b86c-cbd2f75e91ff",
+            "name": "Likes",
+            "containerId": "",
+            "created": "2024-07-15T07:27:21.993Z",
+            "sortNum": 40000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "74f9459c-79b8-48de-9095-2bfab6676bfb",
+            "colId": "a8ce0c23-e0c4-478d-b676-df6dbd4ee65f",
+            "containerId": "4fccab2a-92ee-4a1e-8156-01ea7709f1f2",
+            "name": "register",
+            "url": "http://localhost:4000/api/auth/register",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-07-15T07:28:34.058Z",
+            "modified": "2024-07-23T07:58:06.793Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"david@david.com\",\n  \"password\": \"123456789\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "ab5886aa-f387-4b6a-b510-c7d6c3d06d3c",
+            "colId": "a8ce0c23-e0c4-478d-b676-df6dbd4ee65f",
+            "containerId": "4fccab2a-92ee-4a1e-8156-01ea7709f1f2",
+            "name": "login",
+            "url": "http://localhost:4000/api/auth/login",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-07-15T07:29:13.626Z",
+            "modified": "2024-07-23T07:58:26.201Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"david@david.com\",\n  \"password\": \"123456789\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "79d4ff83-0138-45cd-bbf1-368d96e10a2c",
+            "colId": "a8ce0c23-e0c4-478d-b676-df6dbd4ee65f",
+            "containerId": "3ec0cf21-3694-4368-a2b2-fcbdc3b062ac",
+            "name": "users",
+            "url": "http://localhost:4000/api/users",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2024-07-15T07:29:53.169Z",
+            "modified": "2024-07-23T07:28:52.369Z",
+            "headers": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2OWY1OTZhNGU3YTgzMjMxNjE2MjU1NSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTcyMTcxOTcyMSwiZXhwIjoxNzIxNzI2OTIxfQ.9YsPXeeuw8TdOM-6qaY3wtMaOolpfGt9wwHbKH5jPyw"
+            }
+        },
+        {
+            "_id": "54d23659-9889-4030-8d59-de195c5bf991",
+            "colId": "a8ce0c23-e0c4-478d-b676-df6dbd4ee65f",
+            "containerId": "3ec0cf21-3694-4368-a2b2-fcbdc3b062ac",
+            "name": "profile",
+            "url": "http://localhost:4000/api/users/profile",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2024-07-15T07:30:07.697Z",
+            "modified": "2024-07-23T07:29:56.588Z",
+            "headers": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2OWY1OTZhNGU3YTgzMjMxNjE2MjU1NSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTcyMTcxOTcyMSwiZXhwIjoxNzIxNzI2OTIxfQ.9YsPXeeuw8TdOM-6qaY3wtMaOolpfGt9wwHbKH5jPyw"
+            }
+        },
+        {
+            "_id": "45c10828-8c6e-40bb-bca4-3520c34bda37",
+            "colId": "a8ce0c23-e0c4-478d-b676-df6dbd4ee65f",
+            "containerId": "3ec0cf21-3694-4368-a2b2-fcbdc3b062ac",
+            "name": "profile",
+            "url": "http://localhost:4000/api/users/profile",
+            "method": "PUT",
+            "sortNum": 60000,
+            "created": "2024-07-15T07:30:20.645Z",
+            "modified": "2024-07-23T07:32:49.506Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"mandy@mandy.com\",\n  \"password\": \"123456789\",\n  \"role\": \"admin\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2OWY1YTliNThiNzE2MmFiYWVkMTZiZiIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzIxNzE5ODQ5LCJleHAiOjE3MjE3MjcwNDl9.7XW8aSE92UefzxqKH84OyhVxHac5fklsBA5imxnaU4I"
+            }
+        },
+        {
+            "_id": "c4eddc2e-d256-4319-a612-518d33e068bd",
+            "colId": "a8ce0c23-e0c4-478d-b676-df6dbd4ee65f",
+            "containerId": "d2e70316-865b-4038-b86c-cbd2f75e91ff",
+            "name": "like",
+            "url": "http://localhost:4000/api/posts/like/669f5d2858b7162abaed16c9",
+            "method": "PUT",
+            "sortNum": 70000,
+            "created": "2024-07-15T07:30:48.569Z",
+            "modified": "2024-07-23T07:56:32.062Z",
+            "headers": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2OWY1YTliNThiNzE2MmFiYWVkMTZiZiIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzIxNzE5ODQ5LCJleHAiOjE3MjE3MjcwNDl9.7XW8aSE92UefzxqKH84OyhVxHac5fklsBA5imxnaU4I"
+            }
+        },
+        {
+            "_id": "741855ba-9c81-43c2-a5fd-80b6f9ec1961",
+            "colId": "a8ce0c23-e0c4-478d-b676-df6dbd4ee65f",
+            "containerId": "7554ceb9-a3dd-4c2f-97ba-f768545261e9",
+            "name": "posts",
+            "url": "http://localhost:4000/api/posts",
+            "method": "POST",
+            "sortNum": 80000,
+            "created": "2024-07-15T07:31:10.520Z",
+            "modified": "2024-07-23T07:38:34.977Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"description\": \"adios\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2OWY1YTliNThiNzE2MmFiYWVkMTZiZiIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzIxNzE5ODQ5LCJleHAiOjE3MjE3MjcwNDl9.7XW8aSE92UefzxqKH84OyhVxHac5fklsBA5imxnaU4I"
+            }
+        },
+        {
+            "_id": "cffc887d-b231-41fa-9274-7a8b2604e0c7",
+            "colId": "a8ce0c23-e0c4-478d-b676-df6dbd4ee65f",
+            "containerId": "7554ceb9-a3dd-4c2f-97ba-f768545261e9",
+            "name": "posts",
+            "url": "http://localhost:4000/api/posts/669f5d2858b7162abaed16c9",
+            "method": "DELETE",
+            "sortNum": 90000,
+            "created": "2024-07-15T07:31:24.238Z",
+            "modified": "2024-07-23T07:59:05.030Z",
+            "headers": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2OWY2MjhlNThiNzE2MmFiYWVkMTZlZCIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzIxNzIxNTA2LCJleHAiOjE3MjE3Mjg3MDZ9.dlFu8ja6TqmY3IAXhfo1z2llZ50SJpPz0a47lDE4dnY"
+            }
+        },
+        {
+            "_id": "1e56efac-bb7d-4930-88f3-ec937d686b0c",
+            "colId": "a8ce0c23-e0c4-478d-b676-df6dbd4ee65f",
+            "containerId": "7554ceb9-a3dd-4c2f-97ba-f768545261e9",
+            "name": "posts",
+            "url": "http://localhost:4000/api/posts/669f5dc158b7162abaed16d1",
+            "method": "PUT",
+            "sortNum": 100000,
+            "created": "2024-07-15T07:31:40.851Z",
+            "modified": "2024-07-23T07:39:12.212Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"description\": \"eeeeeeee\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2OWY1YTliNThiNzE2MmFiYWVkMTZiZiIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzIxNzE5ODQ5LCJleHAiOjE3MjE3MjcwNDl9.7XW8aSE92UefzxqKH84OyhVxHac5fklsBA5imxnaU4I"
+            }
+        },
+        {
+            "_id": "7d065f64-be32-4f29-8fb1-29b655c52070",
+            "colId": "a8ce0c23-e0c4-478d-b676-df6dbd4ee65f",
+            "containerId": "7554ceb9-a3dd-4c2f-97ba-f768545261e9",
+            "name": "posts own",
+            "url": "http://localhost:4000/api/posts/own",
+            "method": "GET",
+            "sortNum": 110000,
+            "created": "2024-07-15T07:32:41.361Z",
+            "modified": "2024-07-23T07:40:15.568Z",
+            "headers": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2OWY1YTliNThiNzE2MmFiYWVkMTZiZiIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzIxNzE5ODQ5LCJleHAiOjE3MjE3MjcwNDl9.7XW8aSE92UefzxqKH84OyhVxHac5fklsBA5imxnaU4I"
+            }
+        },
+        {
+            "_id": "c1e3e03f-98e5-4fbb-9d2b-09992c11e6a7",
+            "colId": "a8ce0c23-e0c4-478d-b676-df6dbd4ee65f",
+            "containerId": "7554ceb9-a3dd-4c2f-97ba-f768545261e9",
+            "name": "posts",
+            "url": "http://localhost:4000/api/posts",
+            "method": "GET",
+            "sortNum": 120000,
+            "created": "2024-07-15T07:33:08.195Z",
+            "modified": "2024-07-23T07:41:24.248Z",
+            "headers": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2OWY1YTliNThiNzE2MmFiYWVkMTZiZiIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzIxNzE5ODQ5LCJleHAiOjE3MjE3MjcwNDl9.7XW8aSE92UefzxqKH84OyhVxHac5fklsBA5imxnaU4I"
+            }
+        },
+        {
+            "_id": "64589fdc-8c31-49a5-b466-c5624a6d63bf",
+            "colId": "a8ce0c23-e0c4-478d-b676-df6dbd4ee65f",
+            "containerId": "7554ceb9-a3dd-4c2f-97ba-f768545261e9",
+            "name": "posts id",
+            "url": "http://localhost:4000/api/posts/669f5d2858b7162abaed16c9",
+            "method": "GET",
+            "sortNum": 130000,
+            "created": "2024-07-15T07:33:21.160Z",
+            "modified": "2024-07-23T07:54:21.967Z",
+            "headers": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2OWY1YTliNThiNzE2MmFiYWVkMTZiZiIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzIxNzE5ODQ5LCJleHAiOjE3MjE3MjcwNDl9.7XW8aSE92UefzxqKH84OyhVxHac5fklsBA5imxnaU4I"
+            }
+        },
+        {
+            "_id": "3b5d75d8-3256-4569-a050-86863c58f7f2",
+            "colId": "a8ce0c23-e0c4-478d-b676-df6dbd4ee65f",
+            "containerId": "7554ceb9-a3dd-4c2f-97ba-f768545261e9",
+            "name": "posts user",
+            "url": "http://localhost:4000/api/posts/users/669f5a9b58b7162abaed16bf",
+            "method": "GET",
+            "sortNum": 140000,
+            "created": "2024-07-15T07:33:35.550Z",
+            "modified": "2024-07-23T07:55:20.522Z",
+            "headers": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2OWY1YTliNThiNzE2MmFiYWVkMTZiZiIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzIxNzE5ODQ5LCJleHAiOjE3MjE3MjcwNDl9.7XW8aSE92UefzxqKH84OyhVxHac5fklsBA5imxnaU4I"
+            }
+        }
+    ],
+    "ref": "2AdoR3M2WB6TWfeV6bs-mILMg9dw9q3WoJk1XkFNjmnmsGcU1KqH9YDUluApXmbKIKFjtn0yc7nSOWKMsauj1g"
+}
