@@ -9,4 +9,4 @@ router.use('/users', userRoutes)
 router.use('/auth', authRoutes)
 router.use('/posts', postsRoutes)
 
-export { router }
+export default  router 
