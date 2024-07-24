@@ -54,32 +54,32 @@ export const deletePost = async (req, res) => {
         const postIdToDelete = req.params.id;
         const postIdToDeleteIsValid = Types.ObjectId.isValid(postIdToDelete);
         if (!postIdToDeleteIsValid) {
-          return res.status(400).json({
-            success: false,
-            message: "Id not valid",
-          });
+            return res.status(400).json({
+                success: false,
+                message: "Id not valid",
+            });
         }
         const post = await Post.findById(postIdToDelete);
         if (post.userId.toString() !== userId && userRole !== "admin") {
-          return res.status(403).json({
-            success: false,
-            message: "You are not authorized to delete this post",
-          });
+            return res.status(403).json({
+                success: false,
+                message: "You are not authorized to delete this post",
+            });
         }
         await Post.findByIdAndDelete(postIdToDelete);
         res.status(200).json({
-          success: true,
-          message: "Post deleted",
+            success: true,
+            message: "Post deleted",
         });
-      } catch (error) {
+    } catch (error) {
         return res.status(500).json({
-          success: false,
-          message: "Error deleting post",
-          error: error.message,
+            success: false,
+            message: "Error deleting post",
+            error: error.message,
         });
-      }
-    };
-    
+    }
+};
+
 
 //UPDATE
 export const updatePostById = async (req, res) => {
@@ -163,7 +163,7 @@ export const getAllPost = async (req, res) => {
 };
 
 //GET
-export const getPostdById = async (req, res) => {
+export const getPostById = async (req, res) => {
     try {
         const postId = req.params.id;
         const post = await Post.findOne(
@@ -256,7 +256,7 @@ export const putLikeById = async (req, res) => {
     } catch (error) {
         res.status(500).json(
             {
-                succes: false,
+                success: false,
                 message: "Error adding like to the post",
                 error: error.message
             }
